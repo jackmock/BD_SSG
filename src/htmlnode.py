@@ -9,7 +9,7 @@ class HTMLNode:
         raise NotImplementedError
         # child classes will override this method
 
-    def props_to_hmtl(self):
+    def props_to_html(self):
         result_string = ""
         for prop, prop_val in self.props:
             result += f" {prop}={prop_val}"
