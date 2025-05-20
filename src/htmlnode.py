@@ -11,8 +11,8 @@ class HTMLNode:
 
     def props_to_hmtl(self):
         result_string = ""
-        for prop in self.props:
-            result += f" {prop}"
+        for prop, prop_val in self.props:
+            result += f" {prop}={prop_val}"
         return result_string
     
     def __repr__(self):
