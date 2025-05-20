@@ -12,7 +12,7 @@ class HTMLNode:
     def props_to_html(self):
         result_string = ""
         for prop, prop_val in self.props:
-            result += f" {prop}={prop_val}"
+            result_string += f' {prop}="{prop[prop_val]}"'
         return result_string
     
     def __repr__(self):
