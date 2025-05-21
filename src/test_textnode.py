@@ -4,7 +4,6 @@ from textnode import*
 
 import split_nodes_delimiter
 
-
 class TestTextNode(unittest.TestCase):
     def test_eq(self):
         node = TextNode("This is a text node", TextType.BOLD)
@@ -52,6 +51,5 @@ class TestTextNode(unittest.TestCase):
         result = split_nodes_delimiter(nodes, "`", TextType.CODE)
         self.assertEqual(result, [bold_node])
     
-
 if __name__ == "__main__":
     unittest.main()
