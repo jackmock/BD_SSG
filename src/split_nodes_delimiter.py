@@ -11,7 +11,7 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
         else:    
             split_list = node.text.split(delimiter)
             if len(split_list) % 2 == 0:
-                raise Exception("unclosed delimiter error")
+                raise Exception("Error: detected unclosed delimiter pair")
 
             if len(split_list) == 1:
                 # delimiter is not found; split did not occur
